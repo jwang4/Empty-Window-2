@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D04E8C82741EE4E00832A67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D04E8C62741EE4E00832A67 /* InfoPlist.strings */; };
+		2D04E8CB2741EE4E00832A67 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2D04E8C92741EE4E00832A67 /* Localizable.strings */; };
 		2D7C1F922736FC7E00C840FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7C1F912736FC7E00C840FB /* AppDelegate.swift */; };
 		2D7C1F942736FC7E00C840FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7C1F932736FC7E00C840FB /* SceneDelegate.swift */; };
 		2D7C1F962736FC7E00C840FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7C1F952736FC7E00C840FB /* ViewController.swift */; };
@@ -20,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D04E8C42741E7E500832A67 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		2D04E8C52741E7E500832A67 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		2D04E8C72741EE4E00832A67 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		2D04E8CA2741EE4E00832A67 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		2D7C1F8E2736FC7E00C840FB /* Empty Window 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Empty Window 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D7C1F912736FC7E00C840FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D7C1F932736FC7E00C840FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +82,8 @@
 				2D7C1F9A2736FC7F00C840FB /* Assets.xcassets */,
 				2D7C1F9C2736FC7F00C840FB /* LaunchScreen.storyboard */,
 				2D7C1F9F2736FC7F00C840FB /* Info.plist */,
+				2D04E8C92741EE4E00832A67 /* Localizable.strings */,
+				2D04E8C62741EE4E00832A67 /* InfoPlist.strings */,
 			);
 			path = "Empty Window 2";
 			sourceTree = "<group>";
@@ -133,6 +141,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 2D7C1F852736FC7D00C840FB;
 			packageReferences = (
@@ -153,9 +162,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D7C1FCE2738708100C840FB /* View.xib in Resources */,
+				2D04E8CB2741EE4E00832A67 /* Localizable.strings in Resources */,
 				2D7C1F9E2736FC7F00C840FB /* LaunchScreen.storyboard in Resources */,
 				2D7C1F9B2736FC7F00C840FB /* Assets.xcassets in Resources */,
 				2D7C1F992736FC7E00C840FB /* Main.storyboard in Resources */,
+				2D04E8C82741EE4E00832A67 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,10 +187,27 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		2D04E8C62741EE4E00832A67 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D04E8C72741EE4E00832A67 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2D04E8C92741EE4E00832A67 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D04E8CA2741EE4E00832A67 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		2D7C1F972736FC7E00C840FB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2D7C1F982736FC7E00C840FB /* Base */,
+				2D04E8C42741E7E500832A67 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -188,6 +216,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2D7C1F9D2736FC7F00C840FB /* Base */,
+				2D04E8C52741E7E500832A67 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -199,6 +228,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -260,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -318,8 +349,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VHFU66CXK6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Empty Window 2/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Empty Window 2";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -345,8 +378,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VHFU66CXK6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Empty Window 2/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Empty Window 2";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
